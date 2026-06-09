@@ -1,21 +1,21 @@
 @echo off
 echo ===================================================
-echo             Beefey Apparel B2B Site Auto-Update
+echo             Beefey Apparel 独立站一键更新系统
 echo ===================================================
 echo.
-echo [1/3] Scanning and preparing files...
+echo [1/3] 正在全盘扫描并准备所有更新的文件 (包含所有新页和图片)...
 git add .
 echo.
-echo [2/3] Committing changes...
-git commit -m "feat: Upgrade independent store to new multi-page template"
+echo [2/3] 正在记录本次独立站全套多页模板提交...
+git commit -m "feat: 更换并升级全新多页官网独立站模板（包含所有子页及高精度图片）"
 echo.
-echo [3/3] Pushing to GitHub... (Please check for popup windows!)
+echo [3/3] 正在向 GitHub 仓库安全推送... (请在弹出的图形窗口中完成授权登录)
 git push origin main
 echo.
 echo ===================================================
-echo Success! Push Completed!
-echo Vercel will rebuild and publish your site in 10-20 seconds.
-echo Live website: https://www.beefeyapparel.com
+echo 恭喜您！推送完成！
+echo Vercel 将在 10-20 秒内自动检测变动并完成线上独立站发布。
+echo 您的在线网址：https://www.beefeyapparel.com
 echo ===================================================
 echo.
 pause
