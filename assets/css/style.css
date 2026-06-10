@@ -152,6 +152,7 @@ hr.sep{border:none;border-top:1px solid var(--line);margin:26px 0}
 .nav-trigger{border:none;background:transparent;font:inherit;color:var(--muted);cursor:pointer;padding:0}
 .nav-trigger:hover,.nav-link:hover{color:var(--accent-dark)}
 .mega-menu{position:absolute;left:50%;transform:translateX(-50%);top:calc(100% + 18px);width:min(980px,92vw);background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 22px 70px rgba(40,24,19,.16);padding:22px;display:none;z-index:80}
+.mega-menu::before{content:"";position:absolute;top:-20px;left:0;right:0;height:20px;background:transparent}
 .nav-item:hover .mega-menu{display:block}
 .mega-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
 .mega-col h4{margin:0 0 12px;color:var(--accent-dark);font-size:15px}
