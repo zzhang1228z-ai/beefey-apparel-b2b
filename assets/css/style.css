@@ -219,16 +219,10 @@ hr.sep{border:none;border-top:1px solid var(--line);margin:26px 0}
 
 /* 2026-06 usability refresh */
 .header-inner{padding:20px 0}
-.brand img{width:230px;max-height:88px}
-.site-nav{gap:16px}
-.nav-has-mega{display:flex;align-items:center;gap:4px}
-.nav-parent{font-weight:500}
-.nav-trigger{padding:0 0 0 2px;line-height:1;font-size:12px}
-.nav-item:hover .nav-parent,.nav-item:hover .nav-trigger{color:var(--accent-dark)}
-.mega-col a:hover{color:var(--accent-dark)}
-.collection-card img,.product-card img{background:#f7f1eb}
+.brand img{width:280px;max-height:100px}
+.site-nav{gap:18px}
 @media (max-width:720px){
-  .brand img{width:190px;max-height:72px}
+  .brand img{width:220px;max-height:85px}
   .nav-has-mega{display:block;width:100%}
   .nav-parent{display:inline-block}
   .nav-trigger{padding:6px 0 6px 8px}
