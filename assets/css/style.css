@@ -138,3 +138,40 @@ a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
   .nav-parent{display:inline-block}
   .nav-trigger{padding:6px 0 6px 8px}
 }
+
+/* Targeted homepage preview: Factory-Direct Collections + Featured Starting Styles */
+.sourcing-category-grid{grid-template-columns:repeat(3,1fr)}
+.sourcing-category-card{overflow:hidden;border:1px solid #eadfda;border-radius:18px;background:#fff;box-shadow:0 12px 30px rgba(66,45,36,.06);transition:transform .25s ease, box-shadow .25s ease}
+.sourcing-category-card:hover{transform:translateY(-3px);box-shadow:0 18px 42px rgba(66,45,36,.11)}
+.sourcing-category-card img{aspect-ratio:4/3.45!important;width:100%;object-fit:cover;object-position:center top}
+.sourcing-category-card .card-body{padding:18px!important}
+.sourcing-pill{display:inline-flex;margin-bottom:9px;padding:5px 9px;border-radius:999px;background:#f8eee9;color:#944f58;font-size:11px;font-weight:800}
+.sourcing-category-card h3{margin:0 0 8px;color:#2f2825;font-size:20px;line-height:1.2}
+.sourcing-category-card p{margin:0 0 13px;color:#62534d;font-size:14px;line-height:1.55}
+.sourcing-points{display:flex;flex-wrap:wrap;gap:7px}
+.sourcing-points span{padding:5px 8px;border:1px solid #eadfda;border-radius:999px;color:#716763;background:#fffaf7;font-size:11px;font-weight:700}
+.starting-style-row{align-items:stretch}
+.starting-style-card{overflow:hidden;display:flex;flex-direction:column;border:1px solid #d8beb8;border-radius:22px;background:#3c302d;color:#fff;box-shadow:0 18px 46px rgba(82,55,41,.13)}
+.starting-style-card .starting-media{position:relative;background:#f5f4f3}
+.starting-style-card .starting-media img{width:100%;aspect-ratio:4/3.05;object-fit:contain;padding:18px}
+.starting-style-card .style-badge{position:absolute;top:14px;right:14px;padding:7px 10px;border-radius:7px;background:#4aa878;color:#fff;font-size:12px;font-weight:800;box-shadow:0 8px 18px rgba(74,168,120,.22)}
+.starting-style-card .card-body{display:flex;flex:1;flex-direction:column;padding:22px!important;background:#3c302d}
+.starting-style-card h3{margin:0 0 11px;color:#fff;font-size:21px;line-height:1.22}
+.starting-style-card p{margin:12px 0 16px;color:#d8cbc6;font-size:14px;line-height:1.55}
+.style-tags{display:flex;flex-wrap:wrap;gap:8px}
+.style-tags span,.style-tags a{display:inline-flex;padding:7px 10px;border-radius:7px;font-size:13px;font-weight:700;text-decoration:none}
+.style-tags .label-private{background:#e5f6ff;color:#026699}
+.style-tags .label-oem{background:#fff0c4;color:#9b5a00}
+.style-tags .label-cert{background:#eef8f2;color:#2d7b56}
+.style-tags .label-cert:hover{background:#dff3e8;color:#1f6a48}
+.style-specs{display:grid;grid-template-columns:1fr 1fr;gap:1px;overflow:hidden;margin:0 0 18px;border-radius:11px;background:#6b5752}
+.style-specs span{display:block;padding:12px;background:#574842;color:#fff;font-size:14px;line-height:1.35}
+.style-specs strong{display:block;margin-bottom:4px;color:#d8c7c1;font-size:12px;font-weight:600}
+.fabric-zoom{position:relative;cursor:zoom-in}
+.fabric-zoom::after{content:attr(data-zoom);position:absolute;left:50%;bottom:calc(100% + 12px);width:178px;min-height:90px;padding:58px 12px 12px;border:1px solid rgba(255,255,255,.28);border-radius:14px;background:repeating-linear-gradient(35deg, rgba(255,255,255,.2) 0 1px, transparent 1px 7px),radial-gradient(circle at 30% 25%, rgba(255,255,255,.26), transparent 28%),#6d5a54;color:#fff;box-shadow:0 18px 38px rgba(0,0,0,.22);font-size:11px;line-height:1.35;text-align:left;transform:translateX(-50%) translateY(8px);opacity:0;pointer-events:none;transition:opacity .2s ease, transform .2s ease;z-index:5}
+.fabric-zoom:hover::after{opacity:1;transform:translateX(-50%) translateY(0)}
+.starting-style-card .hero-actions{margin-top:auto}
+.starting-style-card .btn{width:100%;background:#4aa878;color:#fff;box-shadow:none}
+.starting-style-card .btn:hover{background:#3d9167}
+@media(max-width:980px){.sourcing-category-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){.sourcing-category-grid{grid-template-columns:1fr}.style-specs{grid-template-columns:1fr}}
