@@ -75,6 +75,18 @@ a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
 .mega-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
 .mega-col h4{margin:0 0 12px;color:var(--accent-dark);font-size:15px}
 .mega-col a{display:block;color:var(--muted);font-size:14px;margin:9px 0}
+.collections-mega{width:min(1080px,94vw);padding:0;overflow:hidden}
+.collections-mega-head{display:flex;align-items:center;gap:22px;padding:16px 44px;background:#fffaf7;border-bottom:1px solid var(--line)}
+.collections-mega-kicker{color:var(--accent);font-size:12px;font-weight:800;text-transform:uppercase}
+.collections-mega-title{color:var(--text);font-size:15px;font-weight:800;line-height:1.35}
+.collections-mega-body{display:grid;grid-template-columns:minmax(0,1.35fr) 390px;gap:30px;align-items:start;padding:44px}
+.collection-link-grid{display:grid;grid-template-columns:repeat(2,minmax(190px,1fr));gap:13px 48px;align-content:start;padding:4px 0}
+.collection-link-grid a{display:block;color:var(--muted);font-size:14px;font-weight:400;line-height:1.6;text-decoration:none;margin:0}
+.collection-link-grid a:hover{color:var(--accent-dark)}
+.mega-quick-card{background:#faf7f5;border:1px solid #f1e8e3;border-radius:14px;padding:24px 28px;display:flex;flex-direction:column;justify-content:center;min-height:164px}
+.mega-quick-card h4{margin:0 0 14px;color:var(--text);font-size:18px}
+.mega-quick-card p{margin:0 0 18px;color:#807a77;font-size:15px;font-weight:700;line-height:1.35}
+.mega-quick-card .btn{width:100%;box-shadow:none;border-radius:10px;padding:13px 18px}
 .whatsapp-btn{display:inline-flex;align-items:center;gap:8px;padding:13px 20px;border-radius:999px;border:1px solid #25D366;background:#fff;color:#128C4A;font-weight:800;box-shadow:var(--shadow)}
 .whatsapp-btn:hover{background:#eafff1}
 .whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:100;background:#25D366;color:#fff;border-radius:999px;padding:14px 20px;font-weight:800;box-shadow:0 16px 38px rgba(37,211,102,.35)}
@@ -86,8 +98,8 @@ a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
 .category-showcase .card img{aspect-ratio:4/4.8;object-fit:cover}
 .product-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .cert-strip{background:var(--accent);color:#fff;padding:16px 0}.cert-strip .container{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;text-align:center;font-weight:800}
-@media(max-width:980px){.mega-menu{position:static;transform:none;width:100%;box-shadow:none;margin-top:12px}.mega-grid,.certificate-grid,.category-showcase,.product-row{grid-template-columns:repeat(2,1fr)}.cert-strip .container{grid-template-columns:1fr 1fr}}
-@media(max-width:720px){.mega-grid,.certificate-grid,.category-showcase,.product-row,.cert-strip .container{grid-template-columns:1fr}.whatsapp-float{left:14px;right:14px;text-align:center}}
+@media(max-width:980px){.mega-menu{position:static;transform:none;width:100%;box-shadow:none;margin-top:12px}.mega-grid,.certificate-grid,.category-showcase,.product-row{grid-template-columns:repeat(2,1fr)}.cert-strip .container{grid-template-columns:1fr 1fr}.collections-mega{width:100%}.collections-mega-head,.collections-mega-body{padding:22px}.collections-mega-body{grid-template-columns:repeat(2,1fr)}.collection-link-grid{grid-template-columns:1fr;gap:16px}.collection-link-grid a{font-size:16px}}
+@media(max-width:720px){.mega-grid,.collections-mega-body,.certificate-grid,.category-showcase,.product-row,.cert-strip .container{grid-template-columns:1fr}.collections-mega-head{align-items:flex-start;flex-direction:column;gap:6px}.mega-quick-card{padding:22px;min-height:0}.whatsapp-float{left:14px;right:14px;text-align:center}}
 
 /* Final adjustment: Request Quote is the only WhatsApp inquiry entry on product/category pages */
 .product-card .hero-actions .whatsapp-btn,
