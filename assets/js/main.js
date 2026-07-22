@@ -1,53 +1,28 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Menu Toggle
+  // Mobile Menu Toggle (Only for mobile)
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.site-nav');
   if (toggle && nav) {
     toggle.addEventListener('click', () => nav.classList.toggle('open'));
   }
 
-  // Mega Menu "Freeze" Logic for Desktop and Mobile
-  document.querySelectorAll('.nav-has-mega').forEach(item => {
-    const trigger = item.querySelector('.nav-trigger');
-    const parentLink = item.querySelector('.nav-parent');
-    const menu = item.querySelector('.mega-menu');
-    
-    const toggleMenu = (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      
-      const isCurrentlyOpen = menu.style.display === 'block';
-      
-      // Close all other menus first
-      document.querySelectorAll('.mega-menu').forEach(m => {
-        m.style.display = 'none';
-        m.parentElement.classList.remove('active');
+  // Gallery Thumbs logic
+  document.querySelectorAll('[data-gallery]').forEach(gallery => {
+    const main = gallery.querySelector('.gallery-main img');
+    gallery.querySelectorAll('.gallery-thumbs button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        gallery.querySelectorAll('.gallery-thumbs button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        main.src = btn.dataset.src;
+        main.alt = btn.dataset.alt || 'Product image';
       });
-
-      if (!isCurrentlyOpen) {
-        menu.style.display = 'block';
-        item.classList.add('active');
-      }
-    };
-
-    if (trigger) trigger.addEventListener('click', toggleMenu);
-    // On mobile, clicking the text also opens it. On desktop, hover still works via CSS.
-    if (parentLink && window.innerWidth < 981) parentLink.addEventListener('click', toggleMenu);
-  });
-
-  // Close menus when clicking anywhere else
-  document.addEventListener('click', () => {
-    document.querySelectorAll('.mega-menu').forEach(m => {
-      m.style.display = 'none';
-      m.parentElement.classList.remove('active');
     });
   });
 
-  // Re-enable CSS hover state by clearing JS styles on large screens
-  window.addEventListener('resize', () => {
-    if (window.innerWidth >= 981) {
-      document.querySelectorAll('.mega-menu').forEach(m => m.style.display = '');
-    }
-  });
+  // Pre-fill form logic
+  const params = new URLSearchParams(location.search);
+  const product = params.get('product');
+  const productField = document.querySelector('[name="product_name"]');
+  if (productField && product) productField.value = product;
 });
