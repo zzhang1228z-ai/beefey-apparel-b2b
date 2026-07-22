@@ -765,11 +765,9 @@
 
     .b2b-specs-replacement .specs-grid {
       display: grid;
-      width: min(1540px, calc(100vw - 64px)) !important;
-      max-width: none !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-      transform: none;
+      width: var(--container);
+      margin-left: auto;
+      margin-right: auto;
       grid-template-columns: 500px minmax(0, 1fr);
       gap: 34px;
       align-items: start;
