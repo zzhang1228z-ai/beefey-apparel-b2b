@@ -8,11 +8,11 @@
 .header .nav{align-items:center;gap:18px;font-size:14px}
 .header .nav a{color:var(--muted)}
 .header .nav a:hover,.header .nav a.active{color:var(--rose-dark)}
-.header .quote-btn{background:var(--rose);border-radius:999px;padding:12px 20px;box-shadow:var(--shadow)}
-.header .quote-btn:hover{background:var(--rose-dark);transform:translateY(-1px)}
+.header .quote-btn{background:var(--rose);border-radius:999px;padding:12px 20px;box-shadow:var(--shadow);color:#fff!important;opacity:1!important;visibility:visible!important}
+.header .quote-btn:hover{background:var(--rose-dark);transform:translateY(-1px);color:#fff!important;opacity:1!important;visibility:visible!important}
 .site-nav-menu{position:relative}
 .site-nav-trigger{border:0;background:transparent;color:var(--muted);font:inherit;cursor:pointer;padding:0}
-.collection-menu{position:absolute;left:50%;top:calc(100% + 18px);z-index:40;display:none;width:min(900px,90vw);transform:translateX(-50%);overflow:hidden;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 22px 70px rgba(40,24,19,.16)}
+.collection-menu{position:absolute;left:0;top:calc(100% + 18px);z-index:40;display:none;width:min(1080px,95vw);transform:none;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 22px 70px rgba(40,24,19,.16)}
 .collection-menu::before{content:"";position:absolute;top:-20px;right:0;left:0;height:20px}
 .site-nav-menu:hover .collection-menu{display:block}
 .collection-menu-head{padding:16px 32px;background:#fffaf7;border-bottom:1px solid var(--line);color:var(--ink);font-size:15px;font-weight:800}
@@ -28,7 +28,7 @@
 @media(max-width:980px){.header{padding:0 16px}.collection-menu{position:static;display:none;width:100%;transform:none;margin-top:12px;box-shadow:none}.site-nav-menu:hover .collection-menu{display:block}.collection-menu-body{grid-template-columns:1fr}.collection-menu-links{grid-template-columns:1fr}.header .nav{gap:12px}}
 
 /* Larger section labels for faster scanning. */
-.kicker{font-size:14px;line-height:1.4;letter-spacing:.16em;font-weight:800}
+.kicker{font-size:16px;line-height:1.4;letter-spacing:.18em;font-weight:800;margin-bottom:12px}
 .section-head{margin-bottom:24px}
 .section-head > div:only-child{max-width:100%}
 .section-head:has(.kicker:only-child){margin-bottom:20px}
