@@ -1,5 +1,5 @@
-@import url('../women_pajama_sets_preview/women-pajama-sets.css');
-@import url('../women_pajama_sets_preview/product-details.css');
+@import url('women-pajama-sets.css');
+@import url('product-details.css');
 .satin-hero{background:#f3e7e1}.satin-accent{color:#a7636a}.satin-table td:first-child{font-weight:700;color:#7f4d55}.satin-note{border-left-color:#a7636a;background:#f6e9e6;color:#71434a}.satin-note strong{color:#673b43}
 
 /* Satin-specific gallery: a richer editorial rhythm than the core pajama collection. */
@@ -10,3 +10,7 @@
 /* Keep the material table close to its section label. */
 .satin-material-section{padding-top:34px;padding-bottom:48px}.satin-material-head{display:block;margin-bottom:18px}.satin-material-head .kicker{margin-bottom:0}
 @media(max-width:700px){.satin-material-section{padding-top:28px;padding-bottom:38px}.satin-material-head{margin-bottom:14px}}
+
+/* Compact product procurement specification grid. */
+.satin-editorial-grid .spec-grid{display:grid;grid-template-columns:1fr 1fr;margin-top:16px;border:1px solid #ded7d1;border-radius:10px;overflow:hidden;background:#fbfaf7}.satin-editorial-grid .spec-grid>div{min-height:67px;padding:10px 11px;border-right:1px solid #ded7d1;border-bottom:1px solid #ded7d1}.satin-editorial-grid .spec-grid>div:nth-child(2n){border-right:0}.satin-editorial-grid .spec-grid>div:nth-child(n+3){border-bottom:0}.satin-editorial-grid .spec-grid b{display:block;color:#6d625c;font-size:10px;letter-spacing:.05em}.satin-editorial-grid .spec-grid span{display:block;margin-top:5px;color:#37312d;font-size:11px;line-height:1.3}.satin-editorial-grid .detail-link{margin-top:16px}.satin-editorial-grid .card-copy{min-height:0}.satin-editorial-grid .spec-grid span{overflow-wrap:anywhere}
+@media(max-width:1000px){.satin-editorial-grid .spec-grid>div{min-height:60px;padding:9px}}@media(max-width:700px){.satin-editorial-grid .spec-grid>div{min-height:64px}}
