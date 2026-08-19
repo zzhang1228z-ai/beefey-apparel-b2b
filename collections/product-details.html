@@ -9,156 +9,62 @@
             --ink: #2f2825; --muted: #716763; --line: #e7ddd7; --paper: #fff; --soft: #f8f3ef;
             --green: #27694d; --green-dark: #1e523c; --tag-bg: #f3f0ee;
         }
-        body { background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; -webkit-font-smoothing: antialiased; }
-        .topline { padding: 8px 20px; background: var(--ink); color: #fff; text-align: center; font-size: 11px; font-weight: 600; letter-spacing: .05em; }
+        body { background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; }
+        .topline { padding: 8px 20px; background: var(--ink); color: #fff; text-align: center; font-size: 11px; font-weight: 600; }
         .shell { width: min(1280px, calc(100% - 60px)); margin: 0 auto; }
         .header { display: flex; align-items: center; justify-content: space-between; height: 90px; border-bottom: 1px solid var(--line); }
         .brand-logo { width: 120px; height: auto; }
         .nav { display: flex; gap: 30px; font-size: 13px; font-weight: 600; color: var(--muted); }
         .nav a { text-decoration: none; color: inherit; }
-        
         .main-content { padding: 40px 0; display: grid; grid-template-columns: 80px 1fr 1.1fr; gap: 30px; }
-        .breadcrumb { grid-column: 1 / -1; font-size: 13px; color: var(--muted); margin-bottom: 20px; }
-        .breadcrumb b { color: var(--ink); }
-
-        /* Gallery */
         .thumbs { display: flex; flex-direction: column; gap: 15px; }
         .thumb { width: 80px; aspect-ratio: 1; border: 1px solid var(--line); cursor: pointer; object-fit: cover; background: var(--soft); }
         .hero-display { border: 1px solid var(--line); background: var(--soft); }
         .hero-display img { width: 100%; height: auto; display: block; }
-
-        /* Info Panel */
         .info-panel { padding-left: 30px; }
         .style-code { color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .1em; margin-bottom: 15px; display: block; }
         h1 { font-family: Georgia, serif; font-size: 42px; font-weight: 500; margin: 0 0 20px; line-height: 1.1; }
         .desc { font-size: 18px; color: var(--muted); margin-bottom: 30px; line-height: 1.5; }
-        
         .tags { display: flex; gap: 10px; margin-bottom: 40px; }
-        .tag { background: var(--tag-bg); padding: 6px 14px; font-size: 10px; font-weight: 700; border-radius: 2px; text-transform: uppercase; color: var(--muted); }
-        
-        .b2b-note { font-size: 15px; line-height: 1.6; color: var(--muted); border-top: 1px solid var(--line); padding-top: 30px; margin-bottom: 40px; }
-        
+        .tag { background: var(--tag-bg); padding: 6px 14px; font-size: 10px; font-weight: 700; border-radius: 2px; color: var(--muted); text-transform: uppercase; }
         .actions { display: flex; gap: 15px; }
         .btn-primary { background: var(--green); color: #fff; padding: 18px 30px; border-radius: 4px; font-weight: 700; text-decoration: none; font-size: 14px; text-align: center; }
-        .btn-primary:hover { background: var(--green-dark); }
-        .btn-outline { border: 1px solid var(--line); color: var(--ink); padding: 18px 30px; border-radius: 4px; font-weight: 700; text-decoration: none; font-size: 14px; text-align: center; }
-
-        @media (max-width: 900px) {
-            .main-content { grid-template-columns: 1fr; }
-            .thumbs { flex-direction: row; order: 2; }
-            .info-panel { padding-left: 0; order: 3; }
-        }
+        @media (max-width: 900px) { .main-content { grid-template-columns: 1fr; } .thumbs { flex-direction: row; order: 2; } .info-panel { padding-left: 0; order: 3; } }
     </style>
 </head>
 <body>
     <div class="topline">BSCI / OEKO-TEX SUPPORT · MOQ FROM 100 SETS · SAMPLING 15–25 DAYS · BULK 45–60 DAYS</div>
     <div class="shell header">
         <a href="../index.html"><img src="../assets/images/brand/logo.png" alt="Beefey logo" class="brand-logo"></a>
-        <nav class="nav">
-            <a href="lounge-sets.html">Lounge Sets</a>
-            <a href="satin-pajama-sets.html">Satin Series</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <nav class="nav"><a href="lounge-sets.html">Lounge Sets</a><a href="satin-pajama-sets.html">Satin Series</a><a href="contact.html">Contact</a></nav>
     </div>
-
     <div class="shell main-content">
-        <div class="breadcrumb">Collections / Lounge Sets / <b id="display-code">LS-101</b></div>
-        
-        <div class="thumbs" id="thumbs-container">
-            <!-- Thumbs will be injected -->
-        </div>
-
-        <div class="hero-display">
-            <img id="main-hero" src="" alt="Product view">
-        </div>
-
+        <div class="breadcrumb" style="grid-column: 1 / -1; font-size: 13px; color: var(--muted); margin-bottom: 20px;">Collections / Lounge Sets / <b id="display-code">LS-101</b></div>
+        <div class="thumbs" id="thumbs-container"></div>
+        <div class="hero-display"><img id="main-hero" src="" alt="Product view"></div>
         <div class="info-panel">
             <span class="style-code" id="style-label">STYLE LOUNGE-101</span>
-            <h1 id="style-title">Product Title</h1>
-            <p class="desc" id="style-desc">Product description goes here.</p>
-            
-            <div class="tags">
-                <div class="tag">Style-linked detail</div>
-                <div class="tag">B2B Development</div>
-                <div class="tag">MOQ 100 Sets</div>
-            </div>
-
-            <p class="b2b-note">
-                This page keeps the selected Lounge style connected across the main image, alternate detail view, material route, MOQ, GSM and customization fields.
-            </p>
-
-            <div class="actions">
-                <a href="#quote" class="btn-primary">Request quote for this style</a>
-                <a href="lounge-sets.html" class="btn-outline">View related detail</a>
-            </div>
+            <h1 id="style-title"></h1>
+            <p class="desc" id="style-desc"></p>
+            <div class="tags"><div class="tag">Style-linked detail</div><div class="tag">B2B Development</div><div class="tag">MOQ 100 Sets</div></div>
+            <div class="actions"><a href="#quote" class="btn-primary">Request quote for this style</a></div>
         </div>
     </div>
-
     <script>
-        function changeHero(src) {
-            document.getElementById('main-hero').src = src;
-        }
-
+        function changeHero(src) { document.getElementById('main-hero').src = src; }
         const data = {
-            'LS-101': { 
-                title: 'Emerald Long Set', 
-                desc: 'Minimalist crewneck top and matching extra-wide leg trousers in sueded oyster white modal.',
-                main: '../assets/images/lounge/img-msy4bqjz-3b2e0270.png',
-                details: ['../assets/images/lounge/img-msy4bqjz-3b2e0270.png', '../assets/images/lounge/img-msy4cleh-54719190.png']
-            },
-            'LS-102': { 
-                title: 'Ivory Camisole Short Set', 
-                desc: 'Model-led two-piece set in premium cotton rib fabric. Modern and versatile for daily outleisure.',
-                main: '../assets/images/lounge/img-msy4q6p0-a6151871.png',
-                details: ['../assets/images/lounge/img-msy4q6p0-a6151871.png', '../assets/images/lounge/img-msy4lyna-ea579671.png']
-            },
-            'LS-103': { 
-                title: 'Textured summer waffle', 
-                desc: 'Oversized button-down waffle-knit shirt and matching relaxed shorts in olive green.',
-                main: '../assets/images/lounge/img-msy4qaok-508cc048.png',
-                details: ['../assets/images/lounge/img-msy4qaok-508cc048.png', '../assets/images/lounge/img-msy2bg7j-4c3674e8.png']
-            },
-            'LS-104': { 
-                title: 'Resort 3-piece rib set', 
-                desc: 'Ribbed camisole, floor-length cardigan and wide-leg pants in dusty rose modal.',
-                main: '../assets/images/lounge/img-msy3sham-488b4562.png',
-                details: ['../assets/images/lounge/img-msy3sham-488b4562.png', '../assets/images/lounge/img-msy2blw5-d98b09b7.png']
-            },
-            'LS-105': { 
-                title: 'Street-to-sofa jersey', 
-                desc: 'Heavyweight premium jersey crewneck and wide-leg trousers in sand oatmeal.',
-                main: '../assets/images/lounge/img-msy3sw3r-6b34fca6.png',
-                details: ['../assets/images/lounge/img-msy3sw3r-6b34fca6.png', '../assets/images/lounge/img-msy24iti-239db31e.png']
-            },
-            'LS-106': { 
-                title: 'Athleisure hoodie set', 
-                desc: 'Cropped zip-up hoodie and high-waist tapered joggers in heathered light gray tech fleece.',
-                main: '../assets/images/lounge/img-msy3sig7-452eab52.png',
-                details: ['../assets/images/lounge/img-msy3sig7-452eab52.png', '../assets/images/lounge/img-msy2blw5-d98b09b7.png']
-            },
-            'LS-107': { 
-                title: 'Spa-lounge terry set', 
-                desc: 'Short-sleeve polo top and relaxed culottes in premium absorbent terry cloth.',
-                main: '../assets/images/lounge/img-msy3t3sw-f6b4112a.png',
-                details: ['../assets/images/lounge/img-msy3t3sw-f6b4112a.png', '../assets/images/lounge/img-msy418pg-8a0bb0ad.png']
-            },
-            'LS-108': { 
-                title: 'Sand-washed tunic set', 
-                desc: 'V-neck tunic with side slits and flowy wide-leg pants in sueded sand-washed modal.',
-                main: '../assets/images/lounge/img-msy3spj9-54539e92.png',
-                details: ['../assets/images/lounge/img-msy3spj9-54539e92.png', '../assets/images/lounge/img-msy24678-08f43853.png']
-            },
-            'LS-109': { 
-                title: 'Premium 3-piece wrap set', 
-                desc: 'Fine-ribbed camisole, matching jersey wrap cardigan and wide-leg trousers in midnight blue.',
-                main: '../assets/images/lounge/img-msy4bt9o-625f54db.png',
-                details: ['../assets/images/lounge/img-msy4bt9o-625f54db.png', '../assets/images/lounge/img-msy4m5dz-eabf0114.png']
-            }
+            'LS-101': { title: 'Emerald Long Set', desc: 'Minimalist crewneck top and matching extra-wide leg trousers in sueded oyster white modal.', main: '../assets/images/lounge/img-msy4bqjz-3b2e0270.png', details: ['../assets/images/lounge/img-msy4bqjz-3b2e0270.png', '../assets/images/lounge/img-msy4cleh-54719190.png'] },
+            'LS-102': { title: 'Ivory Camisole Short Set', desc: 'Premium cotton rib (棉罗纹) two-piece set in light beige. Modern and versatile for daily outleisure.', main: '../assets/images/lounge/img-msy4q6p0-a6151871.png', details: ['../assets/images/lounge/img-msy4q6p0-a6151871.png', '../assets/images/lounge/img-msy4lyna-ea579671.png'] },
+            'LS-103': { title: 'Textured summer waffle', desc: 'Oversized button-down waffle-knit shirt and matching relaxed shorts in olive green.', main: '../assets/images/lounge/img-msy4qaok-508cc048.png', details: ['../assets/images/lounge/img-msy4qaok-508cc048.png', '../assets/images/lounge/img-msy2bg7j-4c3674e8.png'] },
+            'LS-104': { title: 'Resort 3-piece rib set', desc: 'Ribbed camisole, floor-length cardigan and wide-leg pants in dusty rose modal.', main: '../assets/images/lounge/img-msy3t8ij-1e3cf124.png', details: ['../assets/images/lounge/img-msy3t8ij-1e3cf124.png', '../assets/images/lounge/img-msy2blw5-d98b09b7.png'] },
+            'LS-105': { title: 'Street-to-sofa jersey', desc: 'Heavyweight premium jersey crewneck and wide-leg trousers in sand oatmeal.', main: '../assets/images/lounge/img-msy3sham-488b4562.png', details: ['../assets/images/lounge/img-msy3sham-488b4562.png', '../assets/images/lounge/img-msy2bg7j-4c3674e8.png'] },
+            'LS-106': { title: 'Athleisure hoodie set', desc: 'Cropped zip-up hoodie and high-waist tapered joggers in heathered light gray tech fleece.', main: '../assets/images/lounge/img-msy3t3sw-f6b4112a.png', details: ['../assets/images/lounge/img-msy3t3sw-f6b4112a.png', '../assets/images/lounge/img-msy2blw5-d98b09b7.png'] },
+            'LS-107': { title: 'Spa-lounge terry set', desc: 'Short-sleeve polo top and relaxed culottes in premium absorbent terry cloth.', main: '../assets/images/lounge/img-msy3sqqr-11e9a591.png', details: ['../assets/images/lounge/img-msy3sqqr-11e9a591.png', '../assets/images/lounge/img-msy418pg-8a0bb0ad.png'] },
+            'LS-108': { title: 'Sand-washed tunic set', desc: 'V-neck tunic with side slits and flowy wide-leg pants in sueded sand-washed modal.', main: '../assets/images/lounge/img-msy3sig7-452eab52.png', details: ['../assets/images/lounge/img-msy3sig7-452eab52.png', '../assets/images/lounge/img-msy24678-08f43853.png'] },
+            'LS-109': { title: 'Premium 3-piece wrap set', desc: 'Fine-ribbed camisole, matching jersey wrap cardigan and wide-leg trousers in midnight blue.', main: '../assets/images/lounge/img-msy4bt9o-625f54db.png', details: ['../assets/images/lounge/img-msy4bt9o-625f54db.png', '../assets/images/lounge/img-msy4m5dz-eabf0114.png'] }
         };
-
         const params = new URLSearchParams(window.location.search);
         const style = params.get('style') || 'LS-101';
-        
         if(data[style]) {
             const item = data[style];
             document.getElementById('display-code').innerText = style;
@@ -166,11 +72,7 @@
             document.getElementById('style-title').innerText = item.title;
             document.getElementById('style-desc').innerText = item.desc;
             document.getElementById('main-hero').src = item.main;
-            
-            const thumbContainer = document.getElementById('thumbs-container');
-            thumbContainer.innerHTML = item.details.map(src => `
-                <img src="${src}" class="thumb" onclick="changeHero(this.src)">
-            `).join('');
+            document.getElementById('thumbs-container').innerHTML = item.details.map(src => `<img src="${src}" class="thumb" onclick="changeHero(this.src)">`).join('');
         }
     </script>
 </body>
