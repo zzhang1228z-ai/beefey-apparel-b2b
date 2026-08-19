@@ -3,103 +3,194 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lounge Style Detail | Beefey Apparel</title>
-    <link rel="stylesheet" href="lounge-optimized.css">
+    <title>Product Detail | Beefey Apparel B2B</title>
+    <style>
+        :root {
+            --ink: #2f2825; --muted: #716763; --line: #e7ddd7; --paper: #fff; --soft: #f8f3ef;
+            --green: #27694d; --green-dark: #1e523c; --tag-bg: #f3f0ee;
+        }
+        body { background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; -webkit-font-smoothing: antialiased; }
+        .topline { padding: 8px 20px; background: var(--ink); color: #fff; text-align: center; font-size: 11px; font-weight: 600; letter-spacing: .05em; }
+        .shell { width: min(1280px, calc(100% - 60px)); margin: 0 auto; }
+        .header { display: flex; align-items: center; justify-content: space-between; height: 90px; border-bottom: 1px solid var(--line); }
+        .brand-logo { width: 120px; height: auto; }
+        .nav { display: flex; gap: 30px; font-size: 13px; font-weight: 600; color: var(--muted); }
+        .nav a { text-decoration: none; color: inherit; }
+        
+        .main-content { padding: 40px 0; display: grid; grid-template-columns: 80px 1fr 1fr; gap: 30px; }
+        .breadcrumb { grid-column: 1 / -1; font-size: 13px; color: var(--muted); margin-bottom: 20px; }
+        .breadcrumb b { color: var(--ink); }
+
+        /* Gallery */
+        .thumbs { display: flex; flex-direction: column; gap: 15px; }
+        .thumb { width: 80px; aspect-ratio: 1; border: 1px solid var(--line); cursor: pointer; object-fit: cover; }
+        .hero-display { border: 1px solid var(--line); background: var(--soft); }
+        .hero-display img { width: 100%; height: auto; display: block; }
+
+        /* Info Panel */
+        .info-panel { padding-left: 20px; }
+        .style-code { color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .1em; margin-bottom: 15px; display: block; }
+        h1 { font-family: Georgia, serif; font-size: 42px; font-weight: 500; margin: 0 0 20px; line-height: 1.1; }
+        .desc { font-size: 18px; color: var(--muted); margin-bottom: 30px; }
+        
+        .tags { display: flex; gap: 10px; margin-bottom: 40px; }
+        .tag { background: var(--tag-bg); padding: 6px 14px; font-size: 10px; font-weight: 700; border-radius: 2px; text-transform: uppercase; color: var(--muted); }
+        
+        .b2b-note { font-size: 15px; line-height: 1.6; color: var(--muted); border-top: 1px solid var(--line); padding-top: 30px; margin-bottom: 40px; }
+        
+        .actions { display: flex; gap: 15px; }
+        .btn-primary { background: var(--green); color: #fff; padding: 16px 30px; border-radius: 4px; font-weight: 700; text-decoration: none; font-size: 14px; }
+        .btn-primary:hover { background: var(--green-dark); }
+        .btn-outline { border: 1px solid var(--line); color: var(--ink); padding: 16px 30px; border-radius: 4px; font-weight: 700; text-decoration: none; font-size: 14px; }
+
+        @media (max-width: 900px) {
+            .main-content { grid-template-columns: 1fr; }
+            .thumbs { flex-direction: row; order: 2; }
+            .info-panel { padding-left: 0; order: 3; }
+        }
+    </style>
 </head>
 <body>
     <div class="topline">BSCI / OEKO-TEX SUPPORT · MOQ FROM 100 SETS · SAMPLING 15–25 DAYS · BULK 45–60 DAYS</div>
-    
-    <header class="shell">
+    <div class="shell header">
         <a href="../index.html"><img src="../assets/images/brand/logo.png" alt="Beefey logo" class="brand-logo"></a>
-        <nav>
-            <a href="index.html">Lounge Sets</a>
-            <a href="#">Satin Series</a>
-            <a href="../contact.html">Contact</a>
+        <nav class="nav">
+            <a href="lounge-sets.html">Lounge Sets</a>
+            <a href="satin-pajama-sets.html">Satin Series</a>
+            <a href="contact.html">Contact</a>
         </nav>
-    </header>
+    </div>
 
-    <main class="shell">
-        <div class="breadcrumb" style="padding-top: 40px;">Collections / Lounge Sets / <b id="detail-code">LS-102</b></div>
+    <div class="shell main-content">
+        <div class="breadcrumb">Collections / Lounge Sets / <b id="display-code">LS-102</b></div>
         
-        <div class="detail-grid">
-            <!-- Thumbnails -->
-            <div class="thumbs" id="thumb-container">
-                <!-- Injected by JS -->
+        <div class="thumbs">
+            <img src="../assets/images/lounge/img-msy4bqjz-3b2e0270.png" class="thumb" onclick="changeHero(this.src)">
+            <img src="../assets/images/lounge/img-msy4q6p0-a6151871.png" class="thumb" onclick="changeHero(this.src)">
+        </div>
+
+        <div class="hero-display">
+            <img id="main-hero" src="../assets/images/lounge/img-msy4q6p0-a6151871.png" alt="Product view">
+        </div>
+
+        <div class="info-panel">
+            <span class="style-code" id="style-label">STYLE LOUNGE-102</span>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Detail | Beefey Apparel B2B</title>
+    <style>
+        :root {
+            --ink: #2f2825; --muted: #716763; --line: #e7ddd7; --paper: #fff; --soft: #f8f3ef;
+            --green: #27694d; --green-dark: #1e523c; --tag-bg: #f3f0ee;
+        }
+        body { background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; -webkit-font-smoothing: antialiased; }
+        .topline { padding: 8px 20px; background: var(--ink); color: #fff; text-align: center; font-size: 11px; font-weight: 600; letter-spacing: .05em; }
+        .shell { width: min(1280px, calc(100% - 60px)); margin: 0 auto; }
+        .header { display: flex; align-items: center; justify-content: space-between; height: 90px; border-bottom: 1px solid var(--line); }
+        .brand-logo { width: 120px; height: auto; }
+        .nav { display: flex; gap: 30px; font-size: 13px; font-weight: 600; color: var(--muted); }
+        .nav a { text-decoration: none; color: inherit; }
+        
+        .main-content { padding: 40px 0; display: grid; grid-template-columns: 80px 1fr 1fr; gap: 30px; }
+        .breadcrumb { grid-column: 1 / -1; font-size: 13px; color: var(--muted); margin-bottom: 20px; }
+        .breadcrumb b { color: var(--ink); }
+
+        /* Gallery */
+        .thumbs { display: flex; flex-direction: column; gap: 15px; }
+        .thumb { width: 80px; aspect-ratio: 1; border: 1px solid var(--line); cursor: pointer; object-fit: cover; }
+        .hero-display { border: 1px solid var(--line); background: var(--soft); }
+        .hero-display img { width: 100%; height: auto; display: block; }
+
+        /* Info Panel */
+        .info-panel { padding-left: 20px; }
+        .style-code { color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .1em; margin-bottom: 15px; display: block; }
+        h1 { font-family: Georgia, serif; font-size: 42px; font-weight: 500; margin: 0 0 20px; line-height: 1.1; }
+        .desc { font-size: 18px; color: var(--muted); margin-bottom: 30px; }
+        
+        .tags { display: flex; gap: 10px; margin-bottom: 40px; }
+        .tag { background: var(--tag-bg); padding: 6px 14px; font-size: 10px; font-weight: 700; border-radius: 2px; text-transform: uppercase; color: var(--muted); }
+        
+        .b2b-note { font-size: 15px; line-height: 1.6; color: var(--muted); border-top: 1px solid var(--line); padding-top: 30px; margin-bottom: 40px; }
+        
+        .actions { display: flex; gap: 15px; }
+        .btn-primary { background: var(--green); color: #fff; padding: 16px 30px; border-radius: 4px; font-weight: 700; text-decoration: none; font-size: 14px; }
+        .btn-primary:hover { background: var(--green-dark); }
+        .btn-outline { border: 1px solid var(--line); color: var(--ink); padding: 16px 30px; border-radius: 4px; font-weight: 700; text-decoration: none; font-size: 14px; }
+
+        @media (max-width: 900px) {
+            .main-content { grid-template-columns: 1fr; }
+            .thumbs { flex-direction: row; order: 2; }
+            .info-panel { padding-left: 0; order: 3; }
+        }
+    </style>
+</head>
+<body>
+    <div class="topline">BSCI / OEKO-TEX SUPPORT · MOQ FROM 100 SETS · SAMPLING 15–25 DAYS · BULK 45–60 DAYS</div>
+    <div class="shell header">
+        <a href="../index.html"><img src="../assets/images/brand/logo.png" alt="Beefey logo" class="brand-logo"></a>
+        <nav class="nav">
+            <a href="lounge-sets.html">Lounge Sets</a>
+            <a href="satin-pajama-sets.html">Satin Series</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <div class="shell main-content">
+        <div class="breadcrumb">Collections / Lounge Sets / <b id="display-code">LS-102</b></div>
+        
+        <div class="thumbs">
+            <img src="../assets/images/lounge/img-msy4bqjz-3b2e0270.png" class="thumb" onclick="changeHero(this.src)">
+            <img src="../assets/images/lounge/img-msy4q6p0-a6151871.png" class="thumb" onclick="changeHero(this.src)">
+        </div>
+
+        <div class="hero-display">
+            <img id="main-hero" src="../assets/images/lounge/img-msy4q6p0-a6151871.png" alt="Product view">
+        </div>
+
+        <div class="info-panel">
+            <span class="style-code" id="style-label">STYLE LOUNGE-102</span>
+            <h1 id="style-title">Ivory Camisole Short Set</h1>
+            <p class="desc" id="style-desc">Adjustable straps · relaxed short · fine contrast piping</p>
+            
+            <div class="tags">
+                <div class="tag">Style-linked detail</div>
+                <div class="tag">B2B Development</div>
+                <div class="tag">MOQ 100 Sets</div>
             </div>
 
-            <!-- Main Image -->
-            <div class="main-image">
-                <img id="main-img" src="../assets/images/lounge/img-msy4q6p0-a6151871.png" style="width:100%; height:100%; object-fit:cover;">
-            </div>
+            <p class="b2b-note">
+                This page keeps the selected Lounge style connected across the main image, alternate detail view, material route, MOQ, GSM and customization fields.
+            </p>
 
-            <!-- Info Column -->
-            <div class="detail-info">
-                <span class="style-code" id="info-code">STYLE LOUNGE-102</span>
-                <h1 id="info-name" style="font-family: Georgia, serif; font-size: 42px; margin: 10px 0;">Ivory Camisole Short Set</h1>
-                <p id="info-desc" style="font-size: 18px; color: var(--muted); margin-bottom: 30px;">Adjustable straps · relaxed short · fine contrast piping</p>
-                
-                <div class="trust-badges">
-                    <span class="badge">Style-linked detail</span>
-                    <span class="badge">B2B Development</span>
-                    <span class="badge">MOQ 100 sets</span>
-                </div>
-
-                <hr style="border: 0; border-top: 1px solid var(--line); margin: 30px 0;">
-
-                <p style="color: var(--muted); line-height: 1.6;">
-                    This page keeps the selected Lounge style connected across the main image, alternate detail view, material route, MOQ, GSM and customization fields.
-                </p>
-
-                <div class="cta-group">
-                    <a href="../contact.html" class="btn-primary">Request quote for this style</a>
-                    <a href="index.html" class="btn-secondary">View related detail</a>
-                </div>
+            <div class="actions">
+                <a href="#quote" class="btn-primary">Request quote for this style</a>
+                <a href="lounge-sets.html" class="btn-outline">View related detail</a>
             </div>
         </div>
-    </main>
+    </div>
 
     <script>
-        const products = {
-            'LS-101': {
-                name: 'Emerald Long Set',
-                desc: 'Long-sleeve button front · full-length pant · contrast piping',
-                imgs: ['../assets/images/lounge/img-msy4bqjz-3b2e0270.png', '../assets/images/lounge/img-msy4cleh-54719190.png']
-            },
-            'LS-102': {
-                name: 'Ivory Camisole Short Set',
-                desc: 'Adjustable straps · relaxed short · fine contrast piping',
-                imgs: ['../assets/images/lounge/img-msy4q6p0-a6151871.png', '../assets/images/lounge/img-msy4lyna-ea579671.png']
-            },
-            'LS-103': {
-                name: 'Olive Waffle Set',
-                desc: 'Textured waffle knit · oversized shirt · breathable short',
-                imgs: ['../assets/images/lounge/img-msy4qaok-508cc048.png', '../assets/images/lounge/img-msy418pg-8a0bb0ad.png']
-            }
+        function changeHero(src) {
+            document.getElementById('main-hero').src = src;
+        }
+
+        // Simple dynamic data based on URL
+        const params = new URLSearchParams(window.location.search);
+        const style = params.get('style') || 'LS-102';
+        
+        const data = {
+            'LS-101': { title: 'Emerald Long Set', desc: 'Long-sleeve button front · full-length pant · contrast piping' },
+            'LS-102': { title: 'Ivory Camisole Short Set', desc: 'Adjustable straps · relaxed short · fine contrast piping' },
+            'LS-103': { title: 'Textured Summer Waffle', desc: 'Oversized button-down waffle shirt and matching short' }
         };
 
-        const params = new URLSearchParams(window.location.search);
-        const code = params.get('style') || 'LS-102';
-        const p = products[code];
-
-        if (p) {
-            document.getElementById('detail-code').innerText = code;
-            document.getElementById('info-code').innerText = 'STYLE LOUNGE-' + code.split('-')[1];
-            document.getElementById('info-name').innerText = p.name;
-            document.getElementById('info-desc').innerText = p.desc;
-            document.getElementById('main-img').src = p.imgs[0];
-
-            const thumbCont = document.getElementById('thumb-container');
-            p.imgs.forEach((img, i) => {
-                const div = document.createElement('div');
-                div.className = 'thumb-item' + (i === 0 ? ' active' : '');
-                div.innerHTML = `<img src="${img}" style="width:100%; height:100%; object-fit:cover;">`;
-                div.onclick = () => {
-                    document.getElementById('main-img').src = img;
-                    document.querySelectorAll('.thumb-item').forEach(t => t.classList.remove('active'));
-                    div.classList.add('active');
-                };
-                thumbCont.appendChild(div);
-            });
+        if(data[style]) {
+            document.getElementById('display-code').innerText = style;
+            document.getElementById('style-label').innerText = 'STYLE LOUNGE-' + style.replace('LS-','');
+            document.getElementById('style-title').innerText = data[style].title;
+            document.getElementById('style-desc').innerText = data[style].desc;
         }
     </script>
 </body>
