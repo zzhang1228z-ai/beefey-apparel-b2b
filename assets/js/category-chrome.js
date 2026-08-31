@@ -35,7 +35,7 @@
                 <a class="category-chrome-parent" href="index.html">Collections</a>
                 <button class="category-chrome-trigger" type="button" aria-label="Open Collections menu" aria-expanded="false">▾</button>
                 <div class="category-chrome-menu">
-                  <div class="category-chrome-menu-head"><span class="category-chrome-kicker">Wholesale</span><span class="category-chrome-title">Customizable Foundations for Private Label Brands · MOQ 100 Sets</span></div>
+                  <div class="category-chrome-menu-head"><span class="category-chrome-kicker">Wholesale</span><span class="category-chrome-title">Customizable Foundations for Private Label Brands · Direct Factory Support</span></div>
                   <div class="category-chrome-menu-body"><div class="category-chrome-collection-links">${collectionLinks(slug)}</div><div class="category-chrome-quick"><strong>B2B Quick Access</strong><p>For private label brands, wholesalers, boutiques and sourcing teams.</p><a href="../contact.html">Request Swatch Pack</a></div></div>
                 </div>
               </div>
