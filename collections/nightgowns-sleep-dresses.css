@@ -128,7 +128,12 @@ body.nightgown-collection a:focus-visible,body.nightgown-collection button:focus
   body.nightgown-collection .header-inner{width:calc(100% - 32px)}
   body.nightgown-collection .brand{min-width:0;max-width:calc(100% - 64px)}
   body.nightgown-collection .brand img{width:min(220px,100%);max-width:100%;height:auto}
-  body.nightgown-collection .site-nav{max-width:100%}
+  body.nightgown-collection .site-header,body.nightgown-collection .header-inner{position:relative}
+  body.nightgown-collection .menu-toggle{display:block;flex:0 0 auto}
+  body.nightgown-collection .site-nav{display:none;position:absolute;top:100%;left:0;right:0;max-width:100%;padding:18px 16px 22px;border:1px solid var(--ng-border);border-radius:0 0 16px 16px;background:var(--ng-surface);box-shadow:var(--ng-shadow);align-items:stretch;flex-direction:column;gap:10px}
+  body.nightgown-collection .site-nav.open{display:flex}
+  body.nightgown-collection .site-nav .nav-link,body.nightgown-collection .site-nav .btn{width:100%;box-sizing:border-box}
+  body.nightgown-collection .site-nav .nav-link{padding:8px 4px}
   .ng-shell{width:calc(100% - 32px)}
   .ng-hero{padding:44px 0 40px}
   .ng-breadcrumb{margin-bottom:24px}
