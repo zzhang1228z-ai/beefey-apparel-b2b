@@ -23,169 +23,28 @@
   }
 
   function headerMarkup(slug) {
-    const isSub = slug !== 'home';
-    const base = isSub ? '..' : '.';
-    const collBase = isSub ? '.' : './collections';
-
     return `<div class="category-chrome-topbar">BSCI / OEKO-TEX SUPPORT · MOQ FROM 100 SETS · PRIVATE LABEL SLEEPWEAR</div>
       <header class="category-chrome-header">
         <div class="category-chrome-main">
           <div class="category-chrome-inner">
-            <a class="category-chrome-brand" href="${base}/index.html" aria-label="Beefey home"><img src="${base}/assets/images/brand/logo.png" alt="Beefey"></a>
+            <a class="category-chrome-brand" href="../index.html" aria-label="Beefey home"><img src="../assets/images/brand/logo.png" alt="Beefey"></a>
             <button class="category-chrome-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
             <nav class="category-chrome-nav" aria-label="Main navigation">
-              <a class="category-chrome-link" href="${base}/index.html">Home</a>
-              <div class="category-chrome-item">
-                <a class="category-chrome-parent" href="${collBase}/index.html">Collections</a>
+              <a class="category-chrome-link" href="../index.html">Home</a>
+              <div class="category-chrome-item is-active">
+                <a class="category-chrome-parent" href="index.html">Collections</a>
                 <button class="category-chrome-trigger" type="button" aria-label="Open Collections menu" aria-expanded="false">▾</button>
                 <div class="category-chrome-menu">
                   <div class="category-chrome-menu-head"><span class="category-chrome-kicker">Wholesale</span><span class="category-chrome-title">Customizable Foundations for Private Label Brands · Direct Factory Support</span></div>
-                  <div class="category-chrome-menu-body"><div class="category-chrome-collection-links">${collectionLinks(slug)}</div><div class="category-chrome-quick"><strong>B2B Quick Access</strong><p>For private label brands, wholesalers, boutiques and sourcing teams.</p><a href="${base}/contact.html">Request Swatch Pack</a></div></div>
+                  <div class="category-chrome-menu-body"><div class="category-chrome-collection-links">${collectionLinks(slug)}</div><div class="category-chrome-quick"><strong>B2B Quick Access</strong><p>For private label brands, wholesalers, boutiques and sourcing teams.</p><a href="../contact.html">Request Swatch Pack</a></div></div>
                 </div>
               </div>
-              <div class="category-chrome-item">
-                <a class="category-chrome-parent" href="${base}/oem-odm.html">OEM/ODM</a>
-                <button class="category-chrome-trigger" type="button" aria-label="Open OEM/ODM menu" aria-expanded="false">▾</button>
-                <div class="category-chrome-menu">
-                  <div class="category-chrome-menu-head"><span class="category-chrome-kicker">Manufacturing</span><span class="category-chrome-title">Full-Service OEM &amp; ODM Sleepwear Production</span></div>
-                  <div class="category-chrome-menu-body">
-                    <div class="category-chrome-mega-grid">
-                      <div class="category-chrome-mega-col">
-                        <div class="services-grid" style="grid-template-columns: 1fr;">
-                          <a href="${base}/oem-odm.html"><span>⚡</span> OEM &amp; ODM Process</a>
-                          <a href="${base}/private-label-sleepwear.html"><span>🏷️</span> Private Label Solutions</a>
-                          <a href="${base}/blog/how-to-start-a-private-label-pajama-brand.html"><span>💡</span> Private Label Guide</a>
-                          <a href="${base}/blog/best-fabric-for-sleepwear.html"><span>🧵</span> Fabric Guide</a>
-                          <a href="${base}/fabrics.html"><span>📐</span> Fabric Library</a>
-                          <a href="${base}/oem-odm.html"><span>📦</span> Labels &amp; Packaging</a>
-                          <a href="${base}/oem-odm.html#faq"><span>⏱️</span> MOQ &amp; Delivery</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="category-chrome-quick">
-                      <strong>Getting Started</strong>
-                      <p>Download our latest catalog or request sample swatches for your project.</p>
-                      <a href="${base}/assets/pdf/Beefey-2026-Catalog.pdf" target="_blank">Download Catalog</a>
-                      <a href="${base}/contact.html" style="margin-top:10px; text-align:center; font-size:13px; font-weight:700; color:#b86c75; background:transparent;">Request Swatches</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="category-chrome-item">
-                <a class="category-chrome-parent" href="${base}/factory.html">Factory</a>
-                <button class="category-chrome-trigger" type="button" aria-label="Open Factory menu" aria-expanded="false">▾</button>
-                <div class="category-chrome-menu">
-                  <div class="category-chrome-menu-head"><span class="category-chrome-kicker">Trust &amp; Quality</span><span class="category-chrome-title">Certified Sleepwear Manufacturing Facility</span></div>
-                  <div class="category-chrome-menu-body">
-                    <div class="category-chrome-mega-grid">
-                      <div class="category-chrome-mega-col">
-                        <h4>Factory Overview</h4>
-                        <a href="${base}/factory.html"><span>🏢</span> Factory Tour</a>
-                        <a href="${base}/factory.html#certificates"><span>📜</span> Compliance Certificates</a>
-                        <a href="${base}/factory.html"><span>🔍</span> QC Process</a>
-                      </div>
-                      <div class="category-chrome-mega-col">
-                        <h4>Company Info</h4>
-                        <a href="${base}/about.html"><span>📖</span> About Beefey</a>
-                        <a href="${base}/index.html#faq"><span>❓</span> General FAQ</a>
-                        <a href="${base}/contact.html"><span>📍</span> Visit Our Factory</a>
-                      </div>
-                    </div>
-                    <div class="category-chrome-quick">
-                      <strong>Audit &amp; Video</strong>
-                      <p>Schedule a virtual factory audit or watch our production line in action.</p>
-                      <a href="${base}/contact.html">Request Factory Audit</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                      </div>
-                    </div>
-                    <div class="category-chrome-quick">
-                      <strong>Getting Started</strong>
-                      <p>Download our latest catalog or request sample swatches for your project.</p>
-                      <a href="${base}/assets/pdf/Beefey-2026-Catalog.pdf" target="_blank">Download Catalog</a>
-                      <a href="${base}/contact.html" style="margin-top:10px; text-align:center; font-size:13px; font-weight:700; color:#b86c75; background:transparent;">Request Swatches</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="category-chrome-item">
-                <a class="category-chrome-parent" href="${base}/factory.html">Factory</a>
-                <button class="category-chrome-trigger" type="button" aria-label="Open Factory menu" aria-expanded="false">▾</button>
-                <div class="category-chrome-menu">
-                  <div class="category-chrome-menu-head"><span class="category-chrome-kicker">Trust & Quality</span><span class="category-chrome-title">Certified Sleepwear Manufacturing Facility</span></div>
-                  <div class="category-chrome-menu-body">
-                    <div class="category-chrome-mega-grid">
-                      <div class="category-chrome-mega-col">
-                        <h4>Factory Overview</h4>
-                        <a href="${base}/factory.html"><span>🏢</span> Factory Tour</a>
-                        <a href="${base}/factory.html#certificates"><span>📜</span> Compliance Certificates</a>
-                        <a href="${base}/factory.html"><span>🔍</span> QC Process</a>
-                      </div>
-                      <div class="category-chrome-mega-col">
-                        <h4>Company Info</h4>
-                        <a href="${base}/about.html"><span>📖</span> About Beefey</a>
-                        <a href="${base}/index.html#faq"><span>❓</span> General FAQ</a>
-                        <a href="${base}/contact.html"><span>📍</span> Visit Our Factory</a>
-                      </div>
-                    </div>
-                    <div class="category-chrome-quick">
-                      <strong>Audit & Video</strong>
-                      <p>Schedule a virtual factory audit or watch our production line in action.</p>
-                      <a href="${base}/contact.html">Request Factory Audit</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                      <div class="category-chrome-mega-col">
-                        <h4>Sourcing Guides</h4>
-                        <a href="${base}/blog/best-fabric-for-sleepwear.html"><span>🧵</span> Fabric Guide</a>
-                        <a href="${base}/blog/how-to-start-a-private-label-pajama-brand.html"><span>💡</span> Private Label Guide</a>
-                        <a href="${base}/fabrics.html"><span>📐</span> Fabric Library</a>
-                      </div>
-                    </div>
-                    <div class="category-chrome-quick">
-                      <strong>Getting Started</strong>
-                      <p>Download our latest catalog or request sample swatches for your project.</p>
-                      <a href="${base}/assets/pdf/Beefey-2026-Catalog.pdf" target="_blank">Download Catalog</a>
-                      <a href="${base}/contact.html" style="margin-top:10px; text-align:center; font-size:13px; font-weight:700; color:#b86c75; background:transparent;">Request Swatches</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="category-chrome-item">
-                <a class="category-chrome-parent" href="${base}/factory.html">Factory</a>
-                <button class="category-chrome-trigger" type="button" aria-label="Open Factory menu" aria-expanded="false">▾</button>
-                <div class="category-chrome-menu">
-                  <div class="category-chrome-menu-head"><span class="category-chrome-kicker">Trust & Quality</span><span class="category-chrome-title">Certified Sleepwear Manufacturing Facility</span></div>
-                  <div class="category-chrome-menu-body">
-                    <div class="category-chrome-mega-grid">
-                      <div class="category-chrome-mega-col" style="grid-column: span 1.5;">
-                        <h4>Factory Overview</h4>
-                        <a href="${base}/factory.html"><span>🏢</span> Factory Tour</a>
-                        <a href="${base}/factory.html#certificates"><span>📜</span> Compliance Certificates</a>
-                        <a href="${base}/factory.html"><span>🔍</span> QC Process</a>
-                      </div>
-                      <div class="category-chrome-mega-col" style="grid-column: span 1.5;">
-                        <h4>Company Info</h4>
-                        <a href="${base}/about.html"><span>📖</span> About Beefey</a>
-                        <a href="${base}/index.html#faq"><span>❓</span> General FAQ</a>
-                        <a href="${base}/contact.html"><span>📍</span> Visit Our Factory</a>
-                      </div>
-                    </div>
-                    <div class="category-chrome-quick">
-                      <strong>Audit & Video</strong>
-                      <p>Schedule a virtual factory audit or watch our production line in action.</p>
-                      <a href="${base}/contact.html">Request Factory Audit</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a class="category-chrome-link" href="${base}/factory.html#certificates">Certificates</a>
-              <a class="category-chrome-link" href="${base}/index.html#faq">FAQ</a>
-              <a class="category-chrome-link" href="${base}/about.html">About</a>
-              <a class="category-chrome-link" href="${base}/contact.html">Contact</a>
+              <a class="category-chrome-link" href="../oem-odm.html">OEM/ODM</a>
+              <a class="category-chrome-link" href="../factory.html">Factory</a>
+              <a class="category-chrome-link" href="../factory.html#certificates">Certificates</a>
+              <a class="category-chrome-link" href="../index.html#faq">FAQ</a>
+              <a class="category-chrome-link" href="../about.html">About</a>
+              <a class="category-chrome-link" href="../contact.html">Contact</a>
               <a class="category-chrome-quote" href="https://wa.me/8619653679758?text=Hello%20Beefey%2C%20I%20would%20like%20to%20request%20a%20quotation%20for%20women%27s%20sleepwear." target="_blank" rel="noopener noreferrer">Request Quote</a>
             </nav>
           </div>
