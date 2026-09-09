@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "siteId": "local-preview-4f10cc23",
+  "name": "local-preview",
+  "kind": "react-vite",
+  "devCommand": "vite",
+  "buildCommand": "vite build",
+  "outputDir": "dist",
+  "entry": "index.html",
+  "databaseUrl": "",
+  "createdBy": "accio-site-builder",
+  "createdAt": "2026-08-29T04:24:13.135Z"
+}

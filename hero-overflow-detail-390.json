@@ -1,0 +1,46 @@
+{
+  "btnRow": {
+    "cls": "ng-actions",
+    "left": 24,
+    "overflowX": "visible",
+    "paddingRight": "0px",
+    "right": 351,
+    "tag": "DIV",
+    "width": 327
+  },
+  "buttons": [
+    {
+      "left": 24,
+      "marginRight": "0px",
+      "padding": "13px 22px",
+      "right": 396,
+      "text": "Request a Quote",
+      "width": 372
+    },
+    {
+      "left": 24,
+      "marginRight": "0px",
+      "padding": "13px 22px",
+      "right": 396,
+      "text": "Explore Starting Styles",
+      "width": 372
+    }
+  ],
+  "canHScroll": false,
+  "clippingAncestors": [
+    {
+      "cls": "",
+      "overflow": "hidden",
+      "overflowX": "hidden",
+      "tag": "MAIN"
+    }
+  ],
+  "hero": {
+    "left": 8,
+    "right": 367,
+    "width": 359
+  },
+  "maxScrollX": 0,
+  "scrollbar": 15,
+  "vw": 390
+}

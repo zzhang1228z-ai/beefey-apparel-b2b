@@ -1,0 +1,46 @@
+{
+  "btn": {
+    "fontSize": "13px",
+    "gapFromDesc": -446,
+    "gapFromTitle": null,
+    "padding": "0px",
+    "text": "Collections"
+  },
+  "desc": {
+    "fontSize": "17px",
+    "gapFromTitle": 22,
+    "lineHeight": "26.86px",
+    "marginTop": "0px",
+    "text": "Start with a silhouette, then refine fabric, drape, trim, color, sizing and pack"
+  },
+  "doc": {
+    "bodyScrollWidth": 1249,
+    "clientWidth": 1265,
+    "overflowX": "visible",
+    "scrollWidth": 1265
+  },
+  "heroImg": {
+    "h": 520,
+    "naturalH": 1024,
+    "naturalW": 1536,
+    "w": 527
+  },
+  "title": {
+    "fontSize": "57.6px",
+    "fontWeight": "400",
+    "height": 235,
+    "letterSpacing": "-1.6128px",
+    "lineCount": 4,
+    "lineHeight": "58.752px",
+    "section": {
+      "cls": "ng-hero",
+      "tag": "SECTION"
+    },
+    "text": "Nightgowns, Sleep Dresses & Robes—Developed for Your Label.",
+    "width": 517.34375
+  },
+  "viewport": {
+    "h": 800,
+    "w": 1280
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "elementsBelowTitle": [
+    {
+      "bottom": -354,
+      "cls": "",
+      "fontSize": "13px",
+      "tag": "A",
+      "text": "Collections",
+      "top": -370
+    },
+    {
+      "bottom": 76,
+      "cls": "ng-hero-deck",
+      "fontSize": "17px",
+      "tag": "P",
+      "text": "Start with a silhouette, then refine fabric, drape",
+      "top": 22
+    },
+    {
+      "bottom": 183,
+      "cls": "ng-primary",
+      "fontSize": "14px",
+      "tag": "A",
+      "text": "Request a Quote",
+      "top": 108
+    },
+    {
+      "bottom": 183,
+      "cls": "ng-secondary",
+      "fontSize": "14px",
+      "tag": "A",
+      "text": "Explore Starting Styles",
+      "top": 108
+    }
+  ],
+  "heroClientWidth": 1249,
+  "heroOverflowX": "visible",
+  "heroRect": {
+    "h": 743,
+    "top": 1602,
+    "w": 1249
+  },
+  "heroScrollWidth": 1249,
+  "image": {
+    "h": 520,
+    "left": 645,
+    "top": 139,
+    "w": 527
+  }
+}

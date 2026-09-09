@@ -1,0 +1,239 @@
+{
+  "cardCount": 6,
+  "cards": [
+    {
+      "image": {
+        "containerAspect": 0.833,
+        "containerAspectStyle": "5 / 6",
+        "containerBox": "379x455",
+        "containerClass": "ng-image-link",
+        "imgNatural": "1024x1536",
+        "src": "../assets/images/custom/nightgowns-generated/ng-101-full.png"
+      },
+      "index": 0,
+      "links": [
+        {
+          "cls": "ng-image-link",
+          "href": "nightgown-product-details.html?sku=ng-101",
+          "text": "View details →"
+        },
+        {
+          "cls": "ng-inquiry-link",
+          "href": "https://wa.me/8619653679758?text=Hello%20Beefey%2C%20I%20would%20like%20to%20inquire%20about%20NG-101%20%E2%80%94%20Ivory%20Lace%20Nightgown.%20Please%20share%20available%20fabrics%2C%20customization%20options%2C%20sampling%20details%20and%20quotation.",
+          "text": "Send inquiry →"
+        }
+      ],
+      "sendInquiryButtons": [
+        {
+          "cls": "ng-inquiry-link",
+          "href": "https://wa.me/8619653679758?text=Hello%20Beefey%2C%20I%20would%20like%20to%20inquire%20about%20NG-101%20%E2%80%94%20Ivory%20Lace%20Nightgown.%20Please%20share%20available%20fabrics%2C%20customization%20options%2C%20sampling%20details%20and%20quotation.",
+          "tag": "A",
+          "text": "Send inquiry →"
+        }
+      ],
+      "title": {
+        "cls": "",
+        "isLink": false,
+        "parentIsLink": false,
+        "tag": "H3",
+        "text": "Ivory Lace Nightgown"
+      }
+    },
+    {
+      "image": {
+        "containerAspect": 0.833,
+        "containerAspectStyle": "5 / 6",
+        "containerBox": "379x455",
+        "containerClass": "ng-image-link",
+        "imgNatural": "1024x1536",
+        "src": "../assets/images/custom/nightgowns-generated/sd-102-full.png"
+      },
+      "index": 1,
+      "links": [
+        {
+          "cls": "ng-image-link",
+          "href": "nightgown-product-details.html?sku=sd-102",
+          "text": "View details →"
+        },
+        {
+          "cls": "ng-inquiry-link",
+          "href": "https://wa.me/8619653679758?text=Hello%20Beefey%2C%20I%20would%20like%20to%20inquire%20about%20SD-102%20%E2%80%94%20Dusty%20Rose%20Sleep%20Dress.%20Please%20share%20available%20fabrics%2C%20customization%20options%2C%20sampling%20details%20and%20quotation.",
+          "text": "Send inquiry →"
+        }
+      ],
+      "sendInquiryButtons": [
+        {
+          "cls": "ng-inquiry-link",
+          "href": "https://wa.me/8619653679758?text=Hello%20Beefey%2C%20I%20would%20like%20to%20inquire%20about%20SD-102%20%E2%80%94%20Dusty%20Rose%20Sleep%20Dress.%20Please%20share%20available%20fabrics%2C%20customization%20options%2C%20sampling%20details%20and%20quotation.",
+          "tag": "A",
+          "text": "Send inquiry →"
+        }
+      ],
+      "title": {
+        "cls": "",
+        "isLink": false,
+        "parentIsLink": false,
+        "tag": "H3",
+        "text": "Dusty Rose Sleep Dress"
+      }
+    },
+    {
+      "image": {
+        "containerAspect": 0.833,
+        "containerAspectStyle": "5 / 6",
+        "containerBox": "379x455",
+        "containerClass": "ng-image-link",
+        "imgNatural": "1024x1536",
+        "src": "../assets/images/custom/nightgowns-generated/rb-103-full.png"
+      },
+      "index": 2,
+      "links": [
+        {
+          "cls": "ng-image-link",
+          "href": "nightgown-product-details.html?sku=rb-103",
+          "text": "View details →"
+        },
+        {
+          "cls": "ng-inquiry-link",
+          "href": "https://wa.me/8619653679758?text=Hello%20Beefey%2C%20I%20would%20like%20to%20inquire%20about%20RB-103%20%E2%80%94%20Muted%20Mauve%20Wrap%20Robe.%20Please%20share%20available%20fabrics%2C%20customization%20options%2C%20sampling%20details%20and%20quotation.",
+          "text": "Send inquiry →"
+        }
+      ],
+      "sendInquiryButtons": [
+        {
+          "cls": "ng-inquiry-link",
+          "href": "https://wa.me/8619653679758?text=Hello%20Beefey%2C%20I%20would%20like%20to%20inquire%20about%20RB-103%20%E2%80%94%20Muted%20Mauve%20Wrap%20Robe.%20Please%20share%20available%20fabrics%2C%20customization%20options%2C%20sampling%20details%20and%20quotation.",
+          "tag": "A",
+          "text": "Send inquiry →"
+        }
+      ],
+      "title": {
+        "cls": "",
+        "isLink": false,
+        "parentIsLink": false,
+        "tag": "H3",
+        "text": "Muted Mauve Wrap Robe"
+      }
+    },
+    {
+      "image": {
+        "containerAspect": 0.833,
+        "containerAspectStyle": "5 / 6",
+        "containerBox": "379x455",
+        "containerClass": "ng-image-link",
+        "imgNatural": "1024x1536",
+        "src": "../assets/images/custom/nightgowns-generated/ng-104-full.png"
+      },
+      "index": 3,
+      "links": [
+        {
+          "cls": "ng-image-link",
+          "href": "nightgown-product-details.html?sku=ng-104",
+          "text": "View details →"
+        },
+        {
+          "cls": "ng-inquiry-link",
+          "href": "https://wa.me/8619653679758?text=Hello%20Beefey%2C%20I%20would%20like%20to%20inquire%20about%20NG-104%20%E2%80%94%20Champagne%20Flutter%20Nightgown.%20Please%20share%20available%20fabrics%2C%20customization%20options%2C%20sampling%20details%20and%20quotation.",
+          "text": "Send inquiry →"
+        }
+      ],
+      "sendInquiryButtons": [
+        {
+          "cls": "ng-inquiry-link",
+          "href": "https://wa.me/8619653679758?text=Hello%20Beefey%2C%20I%20would%20like%20to%20inquire%20about%20NG-104%20%E2%80%94%20Champagne%20Flutter%20Nightgown.%20Please%20share%20available%20fabrics%2C%20customization%20options%2C%20sampling%20details%20and%20quotation.",
+          "tag": "A",
+          "text": "Send inquiry →"
+        }
+      ],
+      "title": {
+        "cls": "",
+        "isLink": false,
+        "parentIsLink": false,
+        "tag": "H3",
+        "text": "Champagne Flutter Nightgown"
+      }
+    },
+    {
+      "image": {
+        "containerAspect": 0.833,
+        "containerAspectStyle": "5 / 6",
+        "containerBox": "379x455",
+        "containerClass": "ng-image-link",
+        "imgNatural": "1024x1536",
+        "src": "../assets/images/custom/nightgowns-generated/ng-105-full.png"
+      },
+      "index": 4,
+      "links": [
+        {
+          "cls": "ng-image-link",
+          "href": "nightgown-product-details.html?sku=ng-105",
+          "text": "View details →"
+        },
+        {
+          "cls": "ng-inquiry-link",
+          "href": "https://wa.me/8619653679758?text=Hello%20Beefey%2C%20I%20would%20like%20to%20inquire%20about%20NG-105%20%E2%80%94%20Burgundy%20Long-Sleeve%20Nightgown.%20Please%20share%20available%20fabrics%2C%20customization%20options%2C%20sampling%20details%20and%20quotation.",
+          "text": "Send inquiry →"
+        }
+      ],
+      "sendInquiryButtons": [
+        {
+          "cls": "ng-inquiry-link",
+          "href": "https://wa.me/8619653679758?text=Hello%20Beefey%2C%20I%20would%20like%20to%20inquire%20about%20NG-105%20%E2%80%94%20Burgundy%20Long-Sleeve%20Nightgown.%20Please%20share%20available%20fabrics%2C%20customization%20options%2C%20sampling%20details%20and%20quotation.",
+          "tag": "A",
+          "text": "Send inquiry →"
+        }
+      ],
+      "title": {
+        "cls": "",
+        "isLink": false,
+        "parentIsLink": false,
+        "tag": "H3",
+        "text": "Burgundy Long-Sleeve Nightgown"
+      }
+    },
+    {
+      "image": {
+        "containerAspect": 0.833,
+        "containerAspectStyle": "5 / 6",
+        "containerBox": "379x455",
+        "containerClass": "ng-image-link",
+        "imgNatural": "1024x1536",
+        "src": "../assets/images/custom/nightgowns-generated/rb-106-full.png"
+      },
+      "index": 5,
+      "links": [
+        {
+          "cls": "ng-image-link",
+          "href": "nightgown-product-details.html?sku=rb-106",
+          "text": "View details →"
+        },
+        {
+          "cls": "ng-inquiry-link",
+          "href": "https://wa.me/8619653679758?text=Hello%20Beefey%2C%20I%20would%20like%20to%20inquire%20about%20RB-106%20%E2%80%94%20Taupe%20Piped%20Short%20Robe.%20Please%20share%20available%20fabrics%2C%20customization%20options%2C%20sampling%20details%20and%20quotation.",
+          "text": "Send inquiry →"
+        }
+      ],
+      "sendInquiryButtons": [
+        {
+          "cls": "ng-inquiry-link",
+          "href": "https://wa.me/8619653679758?text=Hello%20Beefey%2C%20I%20would%20like%20to%20inquire%20about%20RB-106%20%E2%80%94%20Taupe%20Piped%20Short%20Robe.%20Please%20share%20available%20fabrics%2C%20customization%20options%2C%20sampling%20details%20and%20quotation.",
+          "tag": "A",
+          "text": "Send inquiry →"
+        }
+      ],
+      "title": {
+        "cls": "",
+        "isLink": false,
+        "parentIsLink": false,
+        "tag": "H3",
+        "text": "Taupe Piped Short Robe"
+      }
+    }
+  ],
+  "overflow": {
+    "clientWidth": 1265,
+    "docScrollWidth": 1265,
+    "hasHorizontalOverflow": false,
+    "viewport": "1280x631"
+  }
+}

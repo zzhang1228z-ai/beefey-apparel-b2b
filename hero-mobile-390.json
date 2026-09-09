@@ -1,0 +1,30 @@
+{
+  "doc": {
+    "bodyScrollWidth": 1249,
+    "clientWidth": 1265,
+    "overflowX": "visible",
+    "scrollWidth": 1265
+  },
+  "hero": {
+    "clientWidth": 1249,
+    "cls": "ng-hero",
+    "overflowX": "visible",
+    "scrollWidth": 1249
+  },
+  "img": {
+    "h": 520,
+    "left": 653,
+    "w": 527
+  },
+  "overflowing": [],
+  "title": {
+    "fontSize": "57.6px",
+    "lineCount": 4,
+    "lineHeight": "58.752px",
+    "width": 517
+  },
+  "viewport": {
+    "h": 800,
+    "w": 1280
+  }
+}

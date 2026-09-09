@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Type: text/javascript
+Cache-Control: max-age=31536000,immutable
+Etag: W/"51d-gzZOH4xn4WgfvDFKKrNPVhTOWpw"
+Date: Mon, 31 Aug 2026 05:59:21 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Content-Length: 7364
+

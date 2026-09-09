@@ -1,0 +1,47 @@
+{
+  "body": {
+    "gap": "30px",
+    "gridTemplateColumns": "570.656px 390px",
+    "padding": "44px"
+  },
+  "card": {
+    "rect": {
+      "height": 199.02,
+      "left": 1012.33,
+      "top": 217.24,
+      "width": 390
+    },
+    "style": {
+      "padding": "24px 28px"
+    }
+  },
+  "grid": {
+    "columnGap": "48px",
+    "gridTemplateColumns": "261.323px 261.333px",
+    "rowGap": "13px"
+  },
+  "head": {
+    "display": "flex",
+    "flexDirection": "row",
+    "gap": "22px",
+    "padding": "16px 44px"
+  },
+  "kicker": {
+    "color": "rgb(184, 108, 117)",
+    "fontSize": "12px",
+    "fontWeight": "800",
+    "lineHeight": "19.2px"
+  },
+  "mega": {
+    "height": 341.27,
+    "left": 367.01,
+    "top": 119.66,
+    "width": 1080
+  },
+  "title": {
+    "color": "rgb(47, 40, 37)",
+    "fontSize": "15px",
+    "fontWeight": "800",
+    "lineHeight": "20.25px"
+  }
+}

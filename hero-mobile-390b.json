@@ -1,0 +1,41 @@
+{
+  "doc": {
+    "bodyScrollWidth": 359,
+    "clientWidth": 375,
+    "overflowX": "visible",
+    "scrollWidth": 375
+  },
+  "hero": {
+    "clientWidth": 359,
+    "cls": "ng-hero",
+    "overflowX": "visible",
+    "scrollWidth": 388
+  },
+  "img": {
+    "h": 185,
+    "left": 64,
+    "w": 247
+  },
+  "overflowing": [
+    {
+      "count": 1,
+      "key": "A.ng-primary",
+      "right": 396
+    },
+    {
+      "count": 1,
+      "key": "A.ng-secondary",
+      "right": 396
+    }
+  ],
+  "title": {
+    "fontSize": "44.85px",
+    "lineCount": 5,
+    "lineHeight": "46.644px",
+    "width": 327
+  },
+  "viewport": {
+    "h": 844,
+    "w": 390
+  }
+}
