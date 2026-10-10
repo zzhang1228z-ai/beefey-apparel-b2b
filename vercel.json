@@ -1,3 +1,100 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/collections/satin-pajamas",
+      "destination": "/collections/satin-pajama-sets",
+      "permanent": true
+    },
+    {
+      "source": "/modal-bamboo-pajamas",
+      "destination": "/collections/modal-bamboo-pajamas",
+      "permanent": true
+    },
+    {
+      "source": "/bridal-sleepwear",
+      "destination": "/collections/bridal-sleepwear",
+      "permanent": true
+    },
+    {
+      "source": "/2026-maternity-sleepwear-manufacturing-guide.html",
+      "destination": "/blog/2026-maternity-sleepwear-manufacturing-guide",
+      "permanent": true
+    },
+    {
+      "source": "/2026-maternity-sleepwear-manufacturing-guide",
+      "destination": "/blog/2026-maternity-sleepwear-manufacturing-guide",
+      "permanent": true
+    },
+    {
+      "source": "/2026-q4-sleepwear-sourcing-guide",
+      "destination": "/blog/2026-q4-sleepwear-sourcing-guide",
+      "permanent": true
+    },
+    {
+      "source": "/2026-q4-sleepwear-sourcing-guide.html",
+      "destination": "/blog/2026-q4-sleepwear-sourcing-guide",
+      "permanent": true
+    },
+    {
+      "source": "/collections/bamboo-sleepwear",
+      "destination": "/collections/modal-bamboo-pajamas",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-start-a-private-label-pajama-brand",
+      "destination": "/blog/how-to-start-a-private-label-pajama-brand",
+      "permanent": true
+    },
+    {
+      "source": "/bamboo-pajama-manufacturer-guide",
+      "destination": "/blog/bamboo-pajama-manufacturer-guide",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-launch-pajama-brand-low-moq",
+      "destination": "/blog/how-to-launch-pajama-brand-low-moq",
+      "permanent": true
+    },
+    {
+      "source": "/assets/pdf/Beefey-2026-Catalog.pdf",
+      "destination": "/assets/lookbook/beefey-catalog.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/best-fabric-for-sleepwear",
+      "destination": "/blog/best-fabric-for-sleepwear",
+      "permanent": true
+    },
+    {
+      "source": "/best-fabric-for-sleepwear.html",
+      "destination": "/blog/best-fabric-for-sleepwear",
+      "permanent": true
+    },
+    {
+      "source": "/satin-pajama-sets",
+      "destination": "/collections/satin-pajama-sets",
+      "permanent": true
+    },
+    {
+      "source": "/lounge-sets",
+      "destination": "/collections/lounge-sets",
+      "permanent": true
+    },
+    {
+      "source": "/nightgowns-sleep-dresses",
+      "destination": "/collections/nightgowns-sleep-dresses",
+      "permanent": true
+    },
+    {
+      "source": "/women-pajama-sets",
+      "destination": "/collections/women-pajama-sets",
+      "permanent": true
+    },
+    {
+      "source": "/blog/..../contact",
+      "destination": "/contact",
+      "permanent": true
+    }
+  ]
 }
