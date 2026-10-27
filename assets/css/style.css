@@ -216,3 +216,11 @@ a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
   .site-footer{overflow-wrap:anywhere}
   body{padding-bottom:84px}
 }
+
+/* 2026-10 batch2: compact WhatsApp float on mobile so it does not cover CTAs */
+@media (max-width:720px){
+  .whatsapp-float{left:auto!important;right:16px!important;bottom:16px!important;width:56px!important;height:56px!important;padding:0!important;border-radius:50%!important;justify-content:center!important;gap:0!important}
+  .whatsapp-float span{display:none!important}
+  .whatsapp-float svg{margin:0!important;width:26px!important;height:26px!important}
+  body{padding-bottom:0}
+}

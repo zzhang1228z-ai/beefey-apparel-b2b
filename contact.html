@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css?v=20261027nav1">
+    <link rel="stylesheet" href="./assets/css/style.css?v=20261028b2">
     <link rel="icon" href="./assets/images/brand/logo.png">
     <style>
         .contact-page { padding: 80px 0; background: #fffaf7; }
@@ -179,7 +179,7 @@
         </div>
     </footer>
 <script>
-(function(){var q=new URLSearchParams(location.search);var product=(q.get("product")||"").slice(0,160);var source=(q.get("source")||"").slice(0,200);var group=document.querySelector("[data-product-group]");var field=document.getElementById("product_name");var src=document.getElementById("source_page");if(product&&field&&group){field.value=product;group.hidden=false;var subj=document.querySelector("input[name=_subject]");if(subj)subj.value="New B2B Inquiry: "+product;}if(src)src.value=source||document.referrer||"";})();
+(function(){var q=new URLSearchParams(location.search);var product=(q.get("product")||"").slice(0,160);var source=(q.get("source")||"").slice(0,200);var group=document.querySelector("[data-product-group]");var field=document.getElementById("product_name");var src=document.getElementById("source_page");if(product&&field&&group){field.value=product;group.hidden=false;var subj=document.querySelector("input[name=_subject]");if(subj)subj.value="New B2B Inquiry: "+product;}if(src)src.value=source||document.referrer||"";var intent=(q.get("intent")||"").toLowerCase();var map={quote:"quote request",catalog:"catalog request",swatch:"swatch request"};if(map[intent]){var f=document.querySelector("form");var h=document.createElement("input");h.type="hidden";h.name="inquiry_type";h.value=map[intent];f.appendChild(h);var subj2=document.querySelector("input[name=_subject]");if(subj2&&!product)subj2.value="New B2B Inquiry ("+map[intent]+") from beefeyapparel.com";var msg=document.getElementById("message");if(intent==="catalog"&&msg&&!msg.value)msg.value="Please email me the lighter version of the 2026 B2B catalog.";}})();
 </script>
 </body>
 </html>

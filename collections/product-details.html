@@ -45,7 +45,7 @@
     <div class="topline">BSCI / OEKO-TEX SUPPORT · MOQ FROM 100 SETS · SAMPLING 15–25 DAYS · BULK 45–60 DAYS</div>
     <div class="shell header">
         <a href="../index.html"><img src="../assets/images/brand/logo.png" alt="Beefey logo" class="brand-logo"></a>
-        <nav class="nav"><a href="lounge-sets.html">Lounge Sets</a><a href="satin-pajama-sets.html">Satin Series</a><a href="contact.html">Contact</a></nav>
+        <nav class="nav"><a href="lounge-sets.html">Lounge Sets</a><a href="satin-pajama-sets.html">Satin Series</a><a href="../contact.html">Contact</a></nav>
     </div>
     <div class="shell main-content">
         <div class="breadcrumb" style="grid-column: 1 / -1; font-size: 13px; color: var(--muted); margin-bottom: 20px;">Collections / Lounge Sets / <b id="display-code">LS-101</b></div>
@@ -56,7 +56,7 @@
             <h1 id="style-title"></h1>
             <p class="desc" id="style-desc"></p>
             <div class="tags"><div class="tag">Style-linked detail</div><div class="tag">B2B Development</div><div class="tag">MOQ 100 Sets</div></div>
-            <div class="actions"><a href="#quote" class="btn-primary">Request quote for this style</a></div>
+            <div class="actions"><a href="../contact.html?intent=quote" id="quote-link" class="btn-primary">Request a quote for this style</a></div>
         </div>
     </div>
     <script>
@@ -81,6 +81,7 @@
             document.getElementById('style-title').innerText = item.title;
             document.getElementById('style-desc').innerText = item.desc;
             document.getElementById('main-hero').src = item.main;
+            document.getElementById('quote-link').href = '../contact.html?product=' + encodeURIComponent(style + ' — ' + item.title) + '&source=' + encodeURIComponent(location.pathname + location.search);
             document.getElementById('thumbs-container').innerHTML = item.details.map(src => `<img src="${src}" class="thumb" onclick="changeHero(this.src)">`).join('');
         }
     </script>

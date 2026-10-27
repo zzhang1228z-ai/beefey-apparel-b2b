@@ -98,7 +98,11 @@ function initDetail() {
   document.querySelectorAll('[data-product-gsm]').forEach(node => { node.textContent = style.gsm; });
   document.querySelectorAll('[data-product-custom]').forEach(node => { node.textContent = style.custom; });
   const quote = document.querySelector('[data-product-quote]');
-  if (quote) quote.href = `https://wa.me/8619653679758?text=${encodeURIComponent(`Hello Beefey, I would like to request a quotation for ${style.id.toUpperCase()} — ${style.name}.`)}`;
+  if (quote) {
+    quote.href = `../contact.html?product=${encodeURIComponent(`${style.id.toUpperCase()} — ${style.name}`)}&source=${encodeURIComponent(location.pathname + location.search)}`;
+    quote.removeAttribute('target');
+    quote.removeAttribute('rel');
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {

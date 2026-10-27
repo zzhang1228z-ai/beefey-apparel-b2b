@@ -45,7 +45,7 @@
               <a class="category-chrome-link" href="../index.html#faq">FAQ</a>
               <a class="category-chrome-link" href="../about.html">About</a>
               <a class="category-chrome-link" href="../contact.html">Contact</a>
-              <a class="category-chrome-quote" href="https://wa.me/8619653679758?text=Hello%20Beefey%2C%20I%20would%20like%20to%20request%20a%20quotation%20for%20women%27s%20sleepwear." target="_blank" rel="noopener noreferrer">Request Quote</a>
+              <a class="category-chrome-quote" href="../contact.html?intent=quote">Request Quote</a>
             </nav>
           </div>
         </div>
