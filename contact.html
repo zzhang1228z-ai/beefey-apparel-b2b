@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css?v=20261027nav1">
     <link rel="icon" href="./assets/images/brand/logo.png">
     <style>
         .contact-page { padding: 80px 0; background: #fffaf7; }
@@ -49,6 +49,7 @@
         .checkbox-item input { width: 18px; height: 18px; cursor: pointer; accent-color: #944f58; }
 
         .btn-submit { width: 100%; background: #2d2421; color: #fff; border: none; padding: 18px; border-radius: 12px; font-size: 16px; font-weight: 800; cursor: pointer; transition: 0.3s; }
+        .product-group .form-control { background: #fffaf7; border-color: #d9b9bd; }
         .btn-submit:hover { background: #4a3a35; transform: translateY(-2px); }
 
         @media (max-width: 980px) {
@@ -115,24 +116,30 @@
                         <input type="hidden" name="_subject" value="New B2B Inquiry from beefeyapparel.com">
                         <input type="hidden" name="_next" value="https://www.beefeyapparel.com/thank-you.html">
                         
-                        <div class="form-group">
-                            <label class="form-label">Full Name *</label>
-                            <input type="text" name="name" class="form-control" placeholder="Your name" required>
+                        <div class="form-group product-group" data-product-group hidden>
+                            <label class="form-label" for="product_name">Selected Style</label>
+                            <input type="text" id="product_name" name="product_name" class="form-control" autocomplete="off" placeholder="Style code and name">
+                            <input type="hidden" id="source_page" name="source_page" value="">
                         </div>
 
                         <div class="form-group">
-                            <label class="form-label">Company Email *</label>
-                            <input type="email" name="email" class="form-control" placeholder="email@company.com" required>
+                            <label class="form-label" for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" autocomplete="name" class="form-control" placeholder="Your name" required>
                         </div>
 
                         <div class="form-group">
-                            <label class="form-label">Company / Brand Name</label>
-                            <input type="text" name="company" class="form-control" placeholder="Your brand">
+                            <label class="form-label" for="email">Company Email *</label>
+                            <input type="email" id="email" name="email" autocomplete="email" class="form-control" placeholder="email@company.com" required>
                         </div>
 
                         <div class="form-group">
-                            <label class="form-label">Interested Categories</label>
-                            <div class="checkbox-group">
+                            <label class="form-label" for="company">Company / Brand Name</label>
+                            <input type="text" id="company" name="company" autocomplete="organization" class="form-control" placeholder="Your brand">
+                        </div>
+
+                        <div class="form-group">
+                            <span class="form-label" id="interest-label">Interested Categories</span>
+                            <div class="checkbox-group" role="group" aria-labelledby="interest-label">
                                 <label class="checkbox-item"><input type="checkbox" name="interest[]" value="Bamboo Pajamas"> Bamboo Pajamas</label>
                                 <label class="checkbox-item"><input type="checkbox" name="interest[]" value="Satin Sleepwear"> Satin Sleepwear</label>
                                 <label class="checkbox-item"><input type="checkbox" name="interest[]" value="Maternity Wear"> Maternity Wear</label>
@@ -141,8 +148,8 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="form-label">Estimated Order Quantity</label>
-                            <select name="quantity" class="form-control">
+                            <label class="form-label" for="quantity">Estimated Order Quantity</label>
+                            <select id="quantity" name="quantity" class="form-control">
                                 <option value="100-300">100 - 300 Sets</option>
                                 <option value="300-1000">300 - 1,000 Sets</option>
                                 <option value="1000+">1,000+ Sets</option>
@@ -150,8 +157,8 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="form-label">Message / Sourcing Brief *</label>
-                            <textarea name="message" class="form-control" rows="5" placeholder="Tell us about your project requirements..." required></textarea>
+                            <label class="form-label" for="message">Message / Sourcing Brief *</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" placeholder="Tell us about your project requirements..." required></textarea>
                         </div>
 
                         <div class="form-group">
@@ -171,5 +178,8 @@
             <p>&copy; 2026 Beefey Apparel (Weifang) Co., Ltd. All rights reserved.</p>
         </div>
     </footer>
+<script>
+(function(){var q=new URLSearchParams(location.search);var product=(q.get("product")||"").slice(0,160);var source=(q.get("source")||"").slice(0,200);var group=document.querySelector("[data-product-group]");var field=document.getElementById("product_name");var src=document.getElementById("source_page");if(product&&field&&group){field.value=product;group.hidden=false;var subj=document.querySelector("input[name=_subject]");if(subj)subj.value="New B2B Inquiry: "+product;}if(src)src.value=source||document.referrer||"";})();
+</script>
 </body>
 </html>
